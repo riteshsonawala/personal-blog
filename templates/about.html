@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}About Me - Personal Blog{% endblock %}
+
+{% block content %}
+<div style="max-width: 800px; margin: 0 auto;">
+    <h1><i class="fas fa-user-circle"></i> About Me</h1>
+
+    <div style="background: rgba(255, 255, 255, 0.8); border-radius: 15px; padding: 2rem; margin-bottom: 2rem;">
+        <div style="display: flex; align-items: center; margin-bottom: 2rem;">
+            <div style="width: 120px; height: 120px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 2rem;">
+                <i class="fas fa-user" style="font-size: 3rem; color: white;"></i>
+            </div>
+            <div>
+                <h2 style="margin-bottom: 0.5rem;">Hello, I'm [Your Name]</h2>
+                <p style="color: #667eea; font-size: 1.1rem; margin: 0;">
+                    <i class="fas fa-briefcase"></i> Developer, Writer, and Thinker
+                </p>
+            </div>
+        </div>
+
+        <div style="line-height: 1.8; color: #555;">
+            <p style="margin-bottom: 1.5rem;">
+                Welcome to my personal blog! I'm passionate about technology, programming, and sharing knowledge with the community.
+                This space serves as my digital journal where I document my learning journey, share insights from my projects,
+                and explore various topics that fascinate me.
+            </p>
+
+            <p style="margin-bottom: 1.5rem;">
+                I believe in the power of written communication to bridge gaps between complex technical concepts and practical understanding.
+                Whether you're a fellow developer, a student, or someone curious about technology, I hope you find something valuable here.
+            </p>
+
+            <h3 style="margin-bottom: 1rem; margin-top: 2rem;"><i class="fas fa-heart"></i> What I Love</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                <div style="background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%); padding: 1.5rem; border-radius: 10px;">
+                    <h4 style="color: #667eea; margin-bottom: 0.5rem;"><i class="fas fa-code"></i> Programming</h4>
+                    <p style="margin: 0; font-size: 0.9rem;">Building elegant solutions to complex problems</p>
+                </div>
+                <div style="background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%); padding: 1.5rem; border-radius: 10px;">
+                    <h4 style="color: #667eea; margin-bottom: 0.5rem;"><i class="fas fa-book"></i> Learning</h4>
+                    <p style="margin: 0; font-size: 0.9rem;">Continuously expanding my knowledge and skills</p>
+                </div>
+                <div style="background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%); padding: 1.5rem; border-radius: 10px;">
+                    <h4 style="color: #667eea; margin-bottom: 0.5rem;"><i class="fas fa-share-alt"></i> Sharing</h4>
+                    <p style="margin: 0; font-size: 0.9rem;">Teaching and mentoring others in the community</p>
+                </div>
+            </div>
+
+            <h3 style="margin-bottom: 1rem; margin-top: 2rem;"><i class="fas fa-tools"></i> My Tech Stack</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem;">
+                <span style="background: #667eea; color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">Python</span>
+                <span style="background: #667eea; color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">Flask</span>
+                <span style="background: #667eea; color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">JavaScript</span>
+                <span style="background: #667eea; color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">AWS</span>
+                <span style="background: #667eea; color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">Docker</span>
+                <span style="background: #667eea; color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">Git</span>
+            </div>
+
+            <h3 style="margin-bottom: 1rem; margin-top: 2rem;"><i class="fas fa-envelope"></i> Get In Touch</h3>
+            <p style="margin-bottom: 1.5rem;">
+                I'm always excited to connect with fellow developers, discuss ideas, or help with questions.
+                Feel free to reach out through any of the channels below:
+            </p>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="mailto:your.email@example.com" class="btn" style="text-decoration: none;">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" class="btn btn-secondary" style="text-decoration: none;" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/yourusername" class="btn btn-secondary" style="text-decoration: none;" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

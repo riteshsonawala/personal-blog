@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - SECRET_KEY=dev-secret-key-change-in-production
+      - DATABASE_URL=sqlite:///blog.db
+      - FLASK_ENV=development
+    volumes:
+      - ./instance:/app/instance
+    restart: unless-stopped
+
+  # Optional: PostgreSQL for production-like setup
+  # Uncomment the following if you want to use PostgreSQL locally
+  # db:
+  #   image: postgres:15
+  #   environment:
+  #     POSTGRES_DB: blog
+  #     POSTGRES_USER: bloguser
+  #     POSTGRES_PASSWORD: blogpassword
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   ports:
+  #     - "5432:5432"
+  #   restart: unless-stopped
+
+# volumes:
+#   postgres_data:
