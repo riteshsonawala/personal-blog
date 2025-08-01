@@ -2,7 +2,7 @@
 name = "personal-blog"
 version = "0.1.0"
 description = "A personal blog website built with Flask"
-author = "Your Name <your.email@example.com>"
+authors = ["ritesh.sonawala@gmail.com"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
