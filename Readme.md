@@ -78,6 +78,6 @@ See the deployment guides in the aws/ folder for different deployment options.
 ## Environment Variables
 - `SECRET_KEY`: Flask secret key for sessions
 - `DATABASE_URL`: Database connection string
-- `PORT`: Port to run the application (default: 5000)
+- `PORT`: Port to run the application (default: 2112)
 
 The application is ready to deploy on AWS using Elastic Beanstalk, ECS, or EC2!

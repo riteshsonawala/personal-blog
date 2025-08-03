@@ -4,7 +4,7 @@ services:
   web:
     build: .
     ports:
-      - "5000:5000"
+      - "2112:2112"
     environment:
       - SECRET_KEY=dev-secret-key-change-in-production
       - DATABASE_URL=sqlite:///blog.db

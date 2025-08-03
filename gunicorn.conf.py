@@ -1,7 +1,7 @@
 import os
 
 # Server socket
-bind = "0.0.0.0:{}".format(os.environ.get('PORT', 5000))
+bind = "0.0.0.0:{}".format(os.environ.get('PORT', 2112))
 backlog = 2048
 
 # Worker processes

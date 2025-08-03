@@ -21,7 +21,7 @@ COPY . .
 RUN mkdir -p /app/instance
 
 # Expose port
-EXPOSE 5000
+EXPOSE 2112
 
 # Create non-root user
 RUN useradd --create-home --shell /bin/bash app \
@@ -30,7 +30,7 @@ USER app
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
-    CMD curl -f http://localhost:5000/ || exit 1
+    CMD curl -f http://localhost:2112/ || exit 1
 
 # Run the application
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "4", "app:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:2112", "--workers", "4", "app:app"]
